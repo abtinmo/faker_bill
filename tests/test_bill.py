@@ -2,7 +2,6 @@ import re
 import unittest
 
 from faker import Faker
-
 from faker_bill.fa_IR import BillProvider
 
 
@@ -43,7 +42,6 @@ class TestBillFaIrProvider(unittest.TestCase):
     def test_bill_name(self):
         bill_name = self.fake.bill_name()
         assert re.match("^[\u0600-\u06FF ]+$", bill_name)
-
 
     def test_bill_provider(self):
         provider = self.fake.bill_provider()

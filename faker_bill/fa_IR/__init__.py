@@ -33,7 +33,7 @@ class BillProvider(BaseProvider):
         ('water', Bill('قبض آب', 'آبفا', "1", water_company_codes)),
         ('electricity', Bill(
                 'قبض برق', 'توانیر', "2",
-                electricity_company_codes
+                electricity_company_codes,
              )),
         ('gas', Bill('قبض گاز', 'شرکت گاز', "3", gas_company_codes)),
         ('phone', Bill('قبض تلفن', 'مخابرات', "4", phone_company_codes)),
@@ -41,7 +41,7 @@ class BillProvider(BaseProvider):
         ('municipality', Bill(
                 'قبض عوارض شهرداری', 'شهرداری',
                 "6",
-                municipality_company_codes
+                municipality_company_codes,
             )),
     ))
 
