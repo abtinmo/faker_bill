@@ -44,6 +44,11 @@ class TestBillFaIrProvider(unittest.TestCase):
         bill_name = self.fake.bill_name()
         assert re.match("^[\u0600-\u06FF ]+$", bill_name)
 
+
+    def test_bill_provider(self):
+        provider = self.fake.bill_provider()
+        assert re.match("^[\u0600-\u06FF ]+$", provider)
+
     def test_provider_name(self):
         bill_provider = self.fake.bill_name()
         assert re.match("^[\u0600-\u06FF ]+$", bill_provider)
