@@ -6,6 +6,30 @@
 
 Provider for [Faker](https://faker.readthedocs.io/) which adds fake bill data.
 
+
+
+install:
+
+	pip install faker-bill
+
+  
+how to use:
+
+	from faker import Faker
+	from faker_bill.fa_IR import BillProvider
+	fake = Faker('fa_IR')
+	fake.add_provider(BillProvider)
+	print(fake.bill_full())
+		
+	شرکت گاز
+
+	قبض گاز
+
+	bill id: 7734853606234
+
+	payment id: 3004125788500
+
+  
 to run tests:
 
-    python -m unittest tests/test_bill.py
+	python -m unittest tests/test_bill.py
