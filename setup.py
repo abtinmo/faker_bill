@@ -1,6 +1,6 @@
-from setuptools import setup, find_packages
 import os
 
+from setuptools import find_packages, setup
 
 here = os.path.abspath(os.path.dirname(__file__))
 with open(os.path.join(here, 'README.md')) as fp:
@@ -8,7 +8,7 @@ with open(os.path.join(here, 'README.md')) as fp:
 
 setup(
     name='faker_bill',
-    version='0.1.0',
+    version='0.1.1',
     description='add bill methods to faker package',
     long_description=long_description,
     long_description_content_type="text/markdown",
@@ -23,7 +23,7 @@ setup(
     install_requires=[
         "faker",
     ],
-        classifiers=[
+    classifiers=[
         # See https://pypi.org/pypi?%3Aaction=list_classifiers
         'Development Status :: 5 - Production/Stable',
         'Environment :: Console',
